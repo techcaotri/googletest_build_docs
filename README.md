@@ -1,5 +1,26 @@
 # GoogleTest
 
+## Steps to build the docs with Jekyll:
+### Setup:
+1. Install Jekyll & dependencies:
+```bash
+sudo apt install ruby3.0-dev
+sudo chown -R $USER:$USER /var/lib/gems/3.0.0/
+gem install jekyll bundler rake csv
+gem install "jekyll-theme-primer"
+```
+
+2. Setup Jekyll project in `docs` directory
+```bash
+jekyll new docs --force
+bundle install
+```
+3. Build the docs and serve it:
+```bash
+bundle exec jekyll build
+bundle exec jekyll serve
+```
+
 ### Announcements
 
 #### Documentation Updates
